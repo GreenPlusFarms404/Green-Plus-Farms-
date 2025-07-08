@@ -1,1 +1,240 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Green Plus Farms</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#37b24d;
+  --dark:#1b4332;
+  --light:#f8f9fa;
+  --accent:#74c69d;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:'Montserrat',sans-serif;
+  background:var(--light);
+  color:var(--dark);
+  line-height:1.6;
+}
+header{
+  background:linear-gradient(135deg,var(--green),var(--accent));
+  color:#fff;
+  padding:4rem 1rem 6rem;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+header h1{font-size:2.75rem;font-weight:700;margin-bottom:0.5rem;}
+header p{font-size:1.2rem;}
+.hero-img{
+  position:absolute;
+  bottom:-5px;
+  left:50%;
+  transform:translateX(-50%);
+  width:120%;
+  max-width:900px;
+  opacity:0.15;
+}
+.container{max-width:1000px;margin:auto;padding:1.5rem;}
+section{margin-bottom:3rem;}
+.coming{text-align:center;font-size:1.25rem;font-weight:600;color:var(--dark);}
+.grid{
+  display:grid;
+  gap:1rem;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+}
+.card{
+  background:#fff;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 4px 8px rgba(0,0,0,0.05);
+  transition:transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 6px 12px rgba(0,0,0,0.08);
+}
+.card img{width:100%;height:160px;object-fit:cover;}
+.card-body{padding:1rem;}
+.card-body h3{font-size:1.1rem;margin-bottom:0.25rem;color:var(--green);}
+.card-body p{font-size:0.9rem;margin-bottom:0;}
+footer{
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:1rem 0;
+}
+.btn{
+  display:inline-block;
+  background:var(--green);
+  color:#fff;
+  padding:0.9rem 1.75rem;
+  border:none;
+  border-radius:30px;
+  font-size:1rem;
+  cursor:pointer;
+  text-decoration:none;
+  transition:background 0.3s ease;
+}
+.btn:hover{background:var(--dark);}
+.dropdown{
+  width:100%;
+  max-width:320px;
+  margin:2rem auto;
+  text-align:center;
+}
+select{
+  width:100%;
+  padding:0.8rem 1rem;
+  font-size:1rem;
+  border:2px solid var(--green);
+  border-radius:6px;
+  outline:none;
+}
+#cropInfo{
+  margin-top:1.5rem;
+  font-weight:600;
+  color:var(--green);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Green Plus Farms</h1>
+  <p>Locally Grown · Fresh · Sustainable · Young &amp; Modern</p>
+  <img src="https://images.unsplash.com/photo-1472806679307-eab04b4a0a5e?auto=format&fit=crop&w=1650&q=60" class="hero-img" alt="">
+</header>
+
+<div class="container">
+  <section class="coming">
+    🌱 We’re in the process of growing – full website coming soon! Follow our progress below.
+  </section>
+
+  <section>
+    <h2 style="text-align:center;margin-bottom:1.5rem;">Current Crops</h2>
+    <div class="grid">
+      <!-- Each card -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1620523953209-2bbe61b17a11?auto=format&fit=crop&w=800&q=60" alt="Cucumbers">
+        <div class="card-body">
+          <h3>Cucumbers</h3>
+          <p>Growing Now · Harvest soon!</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1564518784094-f8e5c16c2ac9?auto=format&fit=crop&w=800&q=60" alt="Carrots">
+        <div class="card-body">
+          <h3>Carrots</h3>
+          <p>Growing Now · Harvest soon!</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1615394303635-f4398536985d?auto=format&fit=crop&w=800&q=60" alt="Spinach">
+        <div class="card-body">
+          <h3>Spinach</h3>
+          <p>Growing Now · Harvest soon!</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1464965828990-371388f96830?auto=format&fit=crop&w=800&q=60" alt="Sweet Peppers">
+        <div class="card-body">
+          <h3>Sweet Peppers</h3>
+          <p>Growing Now · Harvest soon!</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=800&q=60" alt="Ghost Peppers">
+        <div class="card-body">
+          <h3>Ghost Peppers</h3>
+          <p>Growing Now · Harvest soon!</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1508747703725-71959a2518e5?auto=format&fit=crop&w=800&q=60" alt="Tomatoes">
+        <div class="card-body">
+          <h3>Tomatoes</h3>
+          <p>Growing Now · Harvest soon!</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1595155552041-b987bdaf6ea9?auto=format&fit=crop&w=800&q=60" alt="Zucchini">
+        <div class="card-body">
+          <h3>Zucchini</h3>
+          <p>Growing Now · Harvest soon!</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1590178145055-91834b05fc0a?auto=format&fit=crop&w=800&q=60" alt="Yellow Squash">
+        <div class="card-body">
+          <h3>Yellow Squash</h3>
+          <p>Growing Now · Harvest soon!</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1524594154523-280657be52db?auto=format&fit=crop&w=800&q=60" alt="Georgia Collards">
+        <div class="card-body">
+          <h3>Georgia Collards</h3>
+          <p>Growing Now · Harvest soon!</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1582560467499-4e9e6e5d45ff?auto=format&fit=crop&w=800&q=60" alt="Heat-Tolerant Lettuce">
+        <div class="card-body">
+          <h3>Heat‑Tolerant Lettuce</h3>
+          <p>Growing Now · Harvest soon!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;margin-bottom:1rem;">Quick Crop Lookup</h2>
+    <div class="dropdown">
+      <select id="cropSelect" onchange="showCropInfo()">
+        <option value="">— Select a crop —</option>
+        <option value="Cucumbers">Cucumbers</option>
+        <option value="Carrots">Carrots</option>
+        <option value="Spinach">Spinach</option>
+        <option value="Sweet Peppers">Sweet Peppers</option>
+        <option value="Ghost Peppers">Ghost Peppers</option>
+        <option value="Tomatoes">Tomatoes</option>
+        <option value="Zucchini">Zucchini</option>
+        <option value="Yellow Squash">Yellow Squash</option>
+        <option value="Georgia Collards">Georgia Collards</option>
+        <option value="Heat‑Tolerant Lettuce">Heat‑Tolerant Lettuce</option>
+      </select>
+      <div id="cropInfo"></div>
+    </div>
+  </section>
+
+  <section style="text-align:center;">
+    <h2>Follow Our Journey</h2>
+    <p>Watch weekly updates, behind‑the‑scenes tours, and harvest vlogs.</p>
+    <a href="https://youtube.com/@greenpulsefarms?si=V6jTG_HlQ9ykbLSe" target="_blank" class="btn">Visit YouTube Channel</a>
+  </section>
+</div>
+
+<footer>
+  &copy; 2025 Green Plus Farms &nbsp;•&nbsp; All rights reserved
+</footer>
+
+<script>
+function showCropInfo(){
+  var crop=document.getElementById('cropSelect').value;
+  var info=document.getElementById('cropInfo');
+  if(crop){
+    info.innerHTML=crop + " are currently in the growing process – check back soon for harvest dates!";
+  }else{
+    info.innerHTML="";
+  }
+}
+</script>
+
+</body>
+</html>
+
